@@ -1,0 +1,61 @@
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 24px;
+}
+h3{
+    font-size: 18px;
+}
+p{
+    font-size: 16px;  
+}
+.no-wrap{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+a{
+    cursor: pointer;
+}
+grid-element .row{
+    margin-bottom: 0px !important;
+}
+#fabSave{
+    position: fixed;
+    left: 94%;
+    top: 94%;
+    background-color: #153e90;
+    transform: translate(-94%, -94%);
+}
+select{
+    display: block;
+}
+#content{
+    flex: 1 0 auto;
+}
+#content button, #content a{
+    background: #0e49b5;
+    color: white;
+    border: 0;
+}
+
+
+#content button .red, #content a .red{
+    background: red !important;
+    color: white;
+}
+#content #data button,
+#content #data a{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,79 @@
+header-element #title,
+detail_header-element #title{
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    font-family: "Jura", sans-serif;
+    color: white;
+    font-style: italic;
+    transform: translate(-40px, 5px);
+}
+header-element [role="navigation"],
+detail_header-element [role="navigation"]{
+    background: #0e49b5;
+}
+header-element #sports-icon,
+detail_header-element #sports-icon{
+    transform: translateX(5px);
+    font-size: 60px;
+    color: #54e346;
+}
+header-element .brand-logo::before,
+detail_header-element .brand-logo::before{
+    visibility:visible !important;
+    content: "";
+    z-index: 0;
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: #153e90 !important;
+    transform: translateX(-50%) skewX(-50deg);
+}
+header-element span,
+detail_header-element span{
+    display: inline;
+}
+header-element .nav-wrapper,
+detail_header-element .nav-wrapper{
+    width: 100%;
+    overflow: hidden;
+}
+
+header-element .sidenav-trigger{
+    position: relative;
+    left: 90%;
+    transform: translateX(-90%);
+}
+
+detail_header-element .sidenav-trigger{
+    position: absolute;
+    left: 0%;
+    z-index: 10;
+}
+
+header-element .nav-wrapper .hoverable-icon,
+detail_header-element .nav-wrapper .hoverable-icon{
+    width: 40px;
+    text-align: center;
+    position: relative;
+    font-size: 25px;
+    transition: 0.5s ease;
+}
+
+@media screen and (max-width: 616px){
+    header-element #title,
+    detail_header-element #title{
+        display: none;
+    }
+    header-element #sports-icon,
+    detail_header-element #sports-icon{
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+    }
+    header-element .brand-logo::before,
+    detail_header-element .brand-logo::before{
+        width: 150%;
+    }
+}

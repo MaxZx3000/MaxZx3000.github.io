@@ -1,0 +1,13 @@
+no_data-element{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.726);
+}
+no_data-element i{
+    position: relative;
+    font-size: 100px !important;
+    left: 50%;
+    transform: translateX(-50%);
+}
+no_data-element p{
+    padding: 20px;
+}

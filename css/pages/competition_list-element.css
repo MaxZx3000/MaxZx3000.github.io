@@ -1,0 +1,36 @@
+competition_list-element #heading{
+    padding: 0;
+    margin: 10px;
+    border-top: 6px solid #3b77e6;
+    border-bottom: 6px solid #3b77e6;
+    background-color: #153e90;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px black;
+}
+competition_list-element #heading i{
+    position: relative;
+    font-size: 90px;
+    color: #3b77e6;
+    left: 50%;
+    transform: translateX(-50%);
+}
+competition_list-element #heading i::before{
+    position: absolute;
+    left: 25%;
+    transform: translateX(-25%);
+    font-family: 'Material Icons';
+}
+competition_list-element #heading i::after{
+    position: absolute;
+    left: 75%;
+    transform: translateX(-75%);
+    font-family: 'Material Icons';
+}
+competition_list-element #heading h1{
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    background-color: #0e49b5;
+    padding-bottom: 20px;
+    color: white;
+}

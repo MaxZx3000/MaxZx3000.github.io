@@ -1,0 +1,62 @@
+teams_detail-element #detail{
+    margin: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+}
+teams_detail-element #detail .card{
+    overflow: hidden;
+}
+teams_detail-element #detail .card-title{
+    position: relative;
+    z-index: 1;
+    transform: translateY(-20px);
+}
+teams_detail-element #detail .col{
+    margin-bottom: 20px;
+}
+teams_detail-element #detail .card-title::before{
+    content: "";
+    position: absolute;
+    width: 110%;
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #54e346;
+    transform: translateX(-50px) translateY(-20px) skewX(-50deg);
+    z-index: -1;
+}
+teams_detail-element #detail img{
+    position: relative;
+    width: 225px;
+    height: 225px;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%); 
+}
+teams_detail-element #squads{
+    position: relative;
+    overflow-x: auto;
+}
+teams_detail-element #squads h1,
+teams_detail-element #squads table{
+    position: relative;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+teams_detail-element #squads table button{
+    background-color: #54e346;
+    color: black;
+}
+teams_detail-element .card button{
+    width: 100%;
+}
+@media screen and (max-width: 340px){
+    teams_detail-element #detail .card-title::before{
+        width: 140%;
+    }
+}

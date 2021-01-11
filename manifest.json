@@ -1,0 +1,30 @@
+{
+    "name": "My Soccer Progressive Web App",
+    "short_name": "Soccer PWA",
+    "description": "My Soccer PWA. Soccer PWA App lets you browse competitions, matches, and team details at one app.",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#153e90",
+    "theme_color": "#153e90",
+    "gcm_sender_id": "849975024899",
+    "icons": [
+        {
+            "src": "./images/icons/SoccerAppIcon_192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }, 
+        {
+            "src": "./images/icons/SoccerAppIcon_256x256.png",
+            "sizes": "256x256",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "./images/icons/SoccerAppIcon_512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}

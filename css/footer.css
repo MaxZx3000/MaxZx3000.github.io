@@ -1,0 +1,47 @@
+footer-element footer{
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(235, 235, 235);
+}
+footer-element #person{
+    font-size: 100px;
+    transform: translateX(-10%);
+}
+footer-element #ball::before,
+footer-element #person::before{
+    position: absolute;
+    color: black;
+}
+footer-element #ball{
+    transform: translateX(-15px);
+}
+footer-element #ball,
+footer-element #person{
+    color: rgb(119, 119, 119);
+}
+footer-element #person::after,
+footer-element #ball::after{
+    position: absolute;
+    color: rgb(180, 180, 180);
+}
+footer-element #person::before{
+    content: "directions_run";
+    transform: translateX(-50px);
+}
+footer-element #ball::before{
+    content: "sports_soccer";
+    transform: translateX(-50px);
+}
+
+footer-element #person::after{
+    content: "directions_run";
+    transform: translateX(-50px);
+}
+footer-element #ball::after{
+    content: "sports_soccer";
+    transform: translateX(30px);
+}
+footer-element #ball{
+    font-size: 30px;
+    transform: translateX(-40px);
+}

@@ -1,0 +1,70 @@
+.card-action{
+    background-color: rgb(238, 238, 238) !important;
+}
+.card-action button{
+    margin-right: 10px;
+}
+.card-content h1{
+    margin-top: 10px;
+} 
+#options #right-position,
+#options .saved{
+    position: relative;
+    width: 380px;
+    left: 100%;
+    transform: translateX(-100%);
+}
+
+#options .saved{
+    width: 130px !important;
+}
+
+#options .card{
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+#options .card-content{
+    padding: 0px;
+}
+#options #content-container{
+    padding: 20px;
+}
+#options .card-content h1{
+    background-color: #0e49b5;
+    padding: 10px;
+    margin: 0 !important;
+    color: white;
+}
+#options .card-content h1::after{
+    content: "search";
+    font-family: 'Material Icons';
+    position: absolute;
+    z-index: 0;
+    font-size: 90px;
+    left: 100%;
+    transform: translateX(-100%);
+    color: rgba(255, 255, 255, 0.452);
+}
+
+@media screen and (max-width: 490px){
+    #options #right-position,
+    #options .saved,
+    .card-action button,
+    .card-action a{
+        width: 100% !important;
+        left: 0%;
+        transform: translateX(0%);
+        margin-right: 0px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    #options #right-position button,
+    #options .saved button{
+        left: 50%;
+        width: 100%;
+        transform: translateX(-50%);
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
